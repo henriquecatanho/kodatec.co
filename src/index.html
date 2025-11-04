@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kodatec.co — Expanda seu alcance digital</title>
+  <link href="./output.css" rel="stylesheet" />
+  <style>
+  @keyframes fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.4s ease-out forwards;
+  }
+</style>
+</head>
+<body class="bg-gray-950/90 text-gray-100 antialiased">
+  <header class="bg-gray-900 px-6 py-6 flex items-center justify-between container mx-auto rounded-4xl border border-gray-700 mt-12">
+   <a href="#" class="flex items-center gap-3">    
+      <span class="logo-wrap" role="img" aria-hidden="false">
+        <span class="logo-bg" aria-hidden="true"></span>
+        <img class="w-24 h-24 rounded-full " src="./img/Frame 1.pdf (3240 x 3240 px) (1).svg" alt="Kodatec logo" class="logo-img" />
+      </span>
+      <div>
+        <h1 class="text-xl font-bold">Kodatec.co</h1>
+        <p class="text-xs text-gray-400 -mt-1">Sites & Agentes IA</p>
+      </div>
+    </a>
+
+     
+
+    
+
+    <nav id="nav" class="hidden lg:flex items-center gap-8">
+      <a href="#servicos" class="transition hover:origin-left hover:underline">Serviços</a>
+      <a href="#agentes" class="hover:underline">Agentes IA</a>
+      <a href="#portfolio" class="hover:underline">Portfólio</a>
+      <a href="#contato" class="hover:underline">Contato</a>
+      <a href="#contato" class="btn hidden lg:inline-flex">Vamos Conversar</a>
+    </nav>
+
+
+     <button id="mobile-toggle" class="lg:hidden btn p-2">Menu</button>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav id="mobile-nav" class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden z-40 lg:hidden" aria-hidden="true">
+    <div class="mobile-panel w-11/12 max-w-xs h-full p-6">
+      <button id="mobile-close" class="mb-6 btn">Fechar</button>
+      <ul class="flex flex-col gap-4">
+        <li><a href="#servicos" class="mobile-link block">Serviços</a></li>
+        <li><a href="#agentes" class="mobile-link block">Agentes IA</a></li>
+        <li><a href="#portfolio" class="mobile-link block">Portfólio</a></li>
+        <li><a href="#contato" class="mobile-link block">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-6">
+    <section class="grid gap-8 lg:grid-cols-2 items-center py-20">
+      <div>
+        <h2 class="gradient-text text-4xl lg:text-5xl font-extrabold leading-tight mb-4 text-balance">
+  Criamos sites e agentes IA para ampliar seu alcance digital
+</h2>
+
+<style>
+  .gradient-text {
+    background: linear-gradient(90deg, white 0%, #ffd8a8 10%, #ff9a3c 35%, #ff7a00 60%, #ff6a00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* para navegadores que suportam padrão */
+    display: inline-block; /* mantém o tamanho do texto */
+  }
+</style>
+
+        <p class="text-gray-300 mb-6">Kodatec constrói presenças digitais profissionais e agentes automatizados para empresas que querem expandir fronteiras.
+           <br><span class=" text-orange-500/80">Design, performance e automação com foco em resultados.</span></p>
+        <div class="flex gap-4">
+          <a href="#contato" class="btn">Solicitar Proposta</a>
+          <a href="#portfolio" class="px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-800">Ver Portfólio</a>
+        </div>
+        <ul class="mt-8 grid gap-3 text-sm text-gray-400">
+          <li>• Sites otimizados - performance e SEO</li>
+          <li>• Agentes IA para atendimento e automação</li>
+          <li>• Estratégias para ampliar alcance digital</li>
+        </ul>
+      </div>
+
+      <div class="rounded-2xl overflow-hidden relative bg-gradient-to-tr from-gray-800 to-black p-6 sm:p-8">
+  <div class="flex justify-center items-center w-full">
+    <img id="carousel-img"
+         src="./img/note.png"
+         alt="Notebook Kodatec"
+         class="w-full h-auto max-w-full sm:max-w-3xl object-contain rounded-xl transition-all duration-700 ease-in-out" />
+  </div>
+
+  <div id="carousel-buttons" class="mt-4 flex flex-wrap gap-3 justify-center sm:justify-start">
+    <button data-index="0" class="px-3 py-1 rounded-full bg-koda-600 text-black font-semibold text-sm transition-all duration-300">
+      Agentes IA
+    </button>
+    <button data-index="1" class="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm transition-all duration-300">
+      Design
+    </button>
+    <button data-index="2" class="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm transition-all duration-300">
+      Performance
+    </button>
+  </div>
+</div>
+
+
+    </section>
+
+    <section id="servicos" class="py-12">
+      <h3 class="text-2xl font-bold mb-6">Nossos Serviços</h3>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+          <h4 class="font-semibold mb-2">Desenvolvimento Web</h4>
+          <p class="text-sm text-orange-500/80">Sites rápidos, responsivos e otimizados para conversão.</p>
+        </article>
+        <article class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+          <h4 class="font-semibold mb-2">Agentes IA</h4>
+          <p class="text-sm text-orange-500/80">Chatbots e agentes para automação de vendas e atendimento.</p>
+        </article>
+        <article class="p-6 rounded-xl bg-gray-800 border border-gray-700">
+          <h4 class="font-semibold mb-2">Marketing Digital</h4>
+          <p class="text-sm text-orange-500/80">Estratégias para amplificar alcance e performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="agentes" class="py-12">
+      <h3 class="text-2xl font-bold mb-6">Agentes Inteligentes</h3>
+      <p class="underline underline-offset-4 decoration-orange-500 underline-2 mb-6">Automatize tarefas repetitivas, otimize atendimento e gere leads com agentes IA integrados ao seu site.</p>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="p-6 rounded-xl bg-gray-800 border border-gray-700">Agentes Whatsapp atuando 24h / 7dias</div>
+        <div class="p-6 rounded-xl bg-gray-800 border border-gray-700">Fluxos de Conversa Personalizados baseados nos dados de sua empresa</div>
+      </div>
+    </section>
+
+<section id="portfolio" class="py-12">
+  <h3 class="text-2xl font-bold mb-6">Portfólio</h3>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    
+    <div class="rounded-xl overflow-hidden bg-gray-800 flex flex-col">
+      <div class="bg-green-950/80 flex justify-center items-center">
+        <img class="h-auto"
+          src="./img/forest.png" 
+          alt="projeto"
+          class="w-full h-auto max-h-80 object-contain rounded-t-xl"
+        />
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Empresa Camping</h4>
+        <p class="text-sm text-gray-400">Site institucional + agente de contato</p>
+      </div>
+    </div>
+
+    <div class="rounded-xl overflow-hidden bg-gray-800 flex flex-col">
+      <div class="bg-black/80 flex justify-center items-center">
+        <img class="h-auto"
+          src="./img/portfolio2.png" 
+          alt="projeto"
+          class="w-full h-auto max-h-80 object-contain rounded-t-xl"
+        />
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Startup Beta / Bicicletas em Carbono</h4>
+        <p class="text-sm text-gray-400">Landing e automação de vendas</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contato" class="py-12">
+  <h3 class="text-2xl font-bold mb-6">Fale Conosco</h3>
+
+<form id="contact-form" action="https://formsubmit.co/kodatec.co@gmail.com" method="POST" class="grid gap-4 max-w-2xl">
+  <input class="input" name="nome" placeholder="Nome" required />
+  <input class="input" name="email" placeholder="Email" type="email" required />
+  <textarea class="input" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+
+  <!-- Configurações do FormSubmit -->
+  <input type="hidden" name="_subject" value="Novo contato via site Kodatec.co">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <!-- A chave secreta (token) que o FormSubmit te deu -->
+  <input type="hidden" name="_token" value="bd071483c02059d61842e6eb0e898d03">
+
+  <div class="flex gap-4">
+    <button class="btn" type="submit">Enviar</button>
+    <a class="px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-800" href="mailto:contato@kodatec.co">contato@kodatec.co</a>
+  </div>
+</form>
+
+
+
+  <!-- Modal de agradecimento (único e corrigido) -->
+  <div id="thankyou-modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 backdrop-blur-md z-50 transition-opacity duration-500">
+    <div class="bg-gray-950/90 border border-gray-700 p-8 rounded-2xl text-center max-w-md mx-4 shadow-xl animate-fade-in">
+      <div class="flex justify-center mb-4">
+        <img src="./img/gmail-icon.svg" alt="Gmail ícone" class="w-10 h-10 opacity-90">
+      </div>
+      <h4 class="text-2xl font-extrabold text-orange-400 mb-3">Mensagem Enviada!</h4>
+      <p class="text-gray-300 mb-6 leading-relaxed">
+        Agradecemos seu contato.<br>
+        Nossa equipe irá analisar sua mensagem e responder o quanto antes possível.
+      </p>
+      <button id="close-modal" class="px-5 py-2 rounded-md bg-orange-500/90 hover:bg-orange-500 text-black font-semibold transition-colors">
+        Fechar
+      </button>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="py-8 mt-12 border-t border-gray-800">
+    <div class="container mx-auto px-6 text-sm text-gray-400 flex flex-col lg:flex-row justify-between">
+      <div>© 2025 Kodatec.co — Todos os direitos reservados</div>
+      <div class="flex gap-4 mt-4 lg:mt-0">
+        <a href="https://www.instagram.com/kodatec_so/" class="hover:text-white flex items-center"><img class="p-0 m-0 w-8" src="./img/Design sem nome (4).svg" alt="">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+
+<script>
+  const form = document.getElementById("contact-form");
+  const modal = document.getElementById("thankyou-modal");
+  const closeModal = document.getElementById("close-modal");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: data,
+        headers: { "Accept": "application/json" }
+      });
+
+      if (response.ok) {
+        modal.classList.remove("hidden");
+        modal.classList.add("flex", "opacity-100");
+        form.reset();
+        console.log("✅ Mensagem enviada com sucesso!");
+      } else {
+        console.error("❌ Erro no envio:", response.statusText);
+        alert("Não foi possível enviar. Tente novamente mais tarde.");
+      }
+    } catch (error) {
+      console.error("Erro no envio:", error);
+      alert("Ocorreu um erro. Verifique sua conexão e tente novamente.");
+    }
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  });
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+  });
+
+  // ==========================
+  // Carrossel de imagens
+  // ==========================
+  const images = [
+    "./img/ia.png",
+    "./img/note.png",
+    "./img/performance.png"
+  ];
+
+  const buttons = document.querySelectorAll("#carousel-buttons button");
+  const img = document.getElementById("carousel-img");
+
+  let current = 0;
+  let interval;
+
+  function showImage(index) {
+    img.classList.add("opacity-0");
+    setTimeout(() => {
+      img.src = images[index];
+      img.classList.remove("opacity-0");
+    }, 300);
+
+    buttons.forEach((btn, i) => {
+      if (i === index) {
+        btn.classList.replace("bg-gray-800", "bg-koda-600");
+        btn.classList.replace("text-gray-300", "text-black");
+        btn.classList.add("font-semibold");
+      } else {
+        btn.classList.replace("bg-koda-600", "bg-gray-800");
+        btn.classList.replace("text-black", "text-gray-300");
+        btn.classList.remove("font-semibold");
+      }
+    });
+  }
+
+  function nextImage() {
+    current = (current + 1) % images.length;
+    showImage(current);
+  }
+
+  function startCarousel() {
+    interval = setInterval(nextImage, 4000);
+  }
+
+  buttons.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      clearInterval(interval);
+      current = i;
+      showImage(current);
+      startCarousel();
+    });
+  });
+
+  showImage(current);
+  startCarousel();
+
+  // ==========================
+  // Menu mobile
+  // ==========================
+  (function(){
+    const toggle = document.getElementById('mobile-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const closeBtn = document.getElementById('mobile-close');
+    const mobileLinks = document.querySelectorAll('#mobile-nav .mobile-link');
+
+    function hideMobileNav() {
+      mobileNav?.classList.add('hidden');
+      toggle?.setAttribute('aria-expanded', 'false');
+    }
+
+    toggle?.addEventListener('click', () => {
+      if (!mobileNav) return;
+      mobileNav.classList.toggle('hidden');
+      const expanded = mobileNav.classList.contains('hidden') ? 'false' : 'true';
+      toggle?.setAttribute('aria-expanded', expanded);
+    });
+
+    closeBtn?.addEventListener('click', hideMobileNav);
+    mobileLinks.forEach(link => link.addEventListener('click', hideMobileNav));
+    mobileNav?.addEventListener('click', (e) => { if (e.target === mobileNav) hideMobileNav(); });
+    window.addEventListener('resize', () => { if (window.innerWidth >= 1024) hideMobileNav(); });
+  })();
+</script>
+
+
+</body>
+</html>

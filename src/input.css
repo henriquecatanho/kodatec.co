@@ -1,0 +1,146 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Tema Kodatec (laranja + preto + cinzas) aplicado direto aqui */
+:root{
+  --koda-50: #fff6ef;
+  --koda-200: #ffd7a8;
+  --koda-400: #ff8a1a;
+  --koda-600: #ff6200;
+  --koda-800: #b23e00;
+
+  /* RGB para usar em sombras/alpha */
+  --koda-400-rgb: 255 138 26;
+
+  --bg-dark: #0b0b0b;
+  --muted: #8b8b8b;
+}
+
+/* Componentes personalizados */
+@layer components{
+  .btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    background: linear-gradient(180deg, var(--koda-400), var(--koda-600));
+    color: var(--bg-dark);
+    box-shadow: 0 6px 18px rgba(var(--koda-400-rgb)/0.14), 0 2px 6px rgba(0,0,0,0.25);
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  .btn:hover{ transform: translateY(-2px); filter: brightness(1.03); }
+
+  .accent{
+    box-shadow: 0 6px 24px rgba(var(--koda-400-rgb)/0.25), inset 0 -2px 6px rgba(0,0,0,0.35);
+  }
+
+  .input{
+    width:100%;
+    background: rgba(255,255,255,0.02);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.04);
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.5rem;
+  }
+
+  .neon{
+    display:inline-block;
+    width:1rem;
+    height:1rem;
+    border-radius:9999px;
+    background: linear-gradient(180deg,var(--koda-200),var(--koda-400));
+    border:1px solid rgba(255,138,26,0.6);
+    box-shadow:
+      0 6px 18px rgba(var(--koda-400-rgb)/0.25),
+      inset 0 -2px 6px rgba(0,0,0,0.25);
+  }
+
+  .radial-koda{
+    background-image: radial-gradient(50% 100% at 50% 0%, rgba(var(--koda-400-rgb)/0.07) 0%, rgba(0,0,0,0.6) 100%);
+  }
+
+  /* painel mobile em vidro com blur */
+    .mobile-panel{
+    width: min(420px, 90%);
+    max-width: 420px;
+    background: rgba(17,17,17,0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border: 1px solid rgba(255,255,255,0.04);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+    #mobile-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mobile-nav .mobile-link {
+    padding: .9rem 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;   /* eixo Y: centro */
+    justify-content: flex-start; /* traz para a esquerda */
+    text-decoration: none;
+    font-size: 1.25rem; /* letras maiores */
+    line-height: 1.2;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+  }
+    #mobile-nav .mobile-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;            /* espessura */
+    width: 100%;
+    bottom: -3px;          /* deslocamento para baixo */
+    background: linear-gradient(90deg, var(--koda-400), var(--koda-600));
+    border-radius: 2px;
+    pointer-events: none;
+  }
+
+  #mobile-nav .mobile-link:active,
+  #mobile-nav .mobile-link:focus {
+    background: rgba(255,255,255,0.02);
+  }
+}
+
+/* Utilitários mínimos para usar as cores sem precisar do config */
+@layer utilities{
+  /* background helpers */
+  .bg-koda-50{ background-color: var(--koda-50) !important; }
+  .bg-koda-200{ background-color: var(--koda-200) !important; }
+  .bg-koda-400{ background-color: var(--koda-400) !important; }
+  .bg-koda-600{ background-color: var(--koda-600) !important; }
+  .bg-koda-800{ background-color: var(--koda-800) !important; }
+
+  /* text helpers */
+  .text-koda-50{ color: var(--koda-50) !important; }
+  .text-koda-200{ color: var(--koda-200) !important; }
+  .text-koda-400{ color: var(--koda-400) !important; }
+  .text-koda-600{ color: var(--koda-600) !important; }
+
+  /* border helpers */
+  .border-koda-400{ border-color: var(--koda-400) !important; }
+  .border-koda-600{ border-color: var(--koda-600) !important; }
+
+  /* shadow util using rgb var */
+  .shadow-koda{ box-shadow: 0 10px 30px rgba(var(--koda-400-rgb)/0.16) !important; }
+
+  /* small layout utilities useful for the project */
+  .container{ max-width:1100px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem; }
+  @media (min-width: 768px){ .container{ padding-left:1.5rem; padding-right:1.5rem; } }
+}
+/* ...existing code... */
