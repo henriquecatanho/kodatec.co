@@ -29,10 +29,6 @@
       </div>
     </a>
 
-     
-
-    
-
     <nav id="nav" class="hidden lg:flex items-center gap-8">
       <a href="#servicos" class="transition hover:origin-left hover:underline">Serviços</a>
       <a href="#agentes" class="hover:underline">Agentes IA</a>
@@ -40,7 +36,6 @@
       <a href="#contato" class="hover:underline">Contato</a>
       <a href="#contato" class="btn hidden lg:inline-flex">Vamos Conversar</a>
     </nav>
-
 
      <button id="mobile-toggle" class="lg:hidden btn p-2">Menu</button>
   </header>
@@ -62,18 +57,18 @@
     <section class="grid gap-8 lg:grid-cols-2 items-center py-20">
       <div>
         <h2 class="gradient-text text-4xl lg:text-5xl font-extrabold leading-tight mb-4 text-balance">
-  Criamos sites e agentes IA para ampliar seu alcance digital
-</h2>
+          Criamos sites e agentes IA para ampliar seu alcance digital
+        </h2>
 
-<style>
-  .gradient-text {
-    background: linear-gradient(90deg, white 0%, #ffd8a8 10%, #ff9a3c 35%, #ff7a00 60%, #ff6a00 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; /* para navegadores que suportam padrão */
-    display: inline-block; /* mantém o tamanho do texto */
-  }
-</style>
+        <style>
+          .gradient-text {
+            background: linear-gradient(90deg, white 0%, #ffd8a8 10%, #ff9a3c 35%, #ff7a00 60%, #ff6a00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+          }
+        </style>
 
         <p class="text-gray-300 mb-6">Kodatec constrói presenças digitais profissionais e agentes automatizados para empresas que querem expandir fronteiras.
            <br><span class=" text-orange-500/80">Design, performance e automação com foco em resultados.</span></p>
@@ -89,27 +84,19 @@
       </div>
 
       <div class="rounded-2xl overflow-hidden relative bg-gradient-to-tr from-gray-800 to-black p-6 sm:p-8">
-  <div class="flex justify-center items-center w-full">
-    <img id="carousel-img"
-         src="./img/note.png"
-         alt="Notebook Kodatec"
-         class="w-full h-auto max-w-full sm:max-w-3xl object-contain rounded-xl transition-all duration-700 ease-in-out" />
-  </div>
+        <div class="flex justify-center items-center w-full">
+          <img id="carousel-img"
+               src="./img/note.png"
+               alt="Notebook Kodatec"
+               class="w-full h-auto max-w-full sm:max-w-3xl object-contain rounded-xl transition-all duration-700 ease-in-out" />
+        </div>
 
-  <div id="carousel-buttons" class="mt-4 flex flex-wrap gap-3 justify-center sm:justify-start">
-    <button data-index="0" class="px-3 py-1 rounded-full bg-koda-600 text-black font-semibold text-sm transition-all duration-300">
-      Agentes IA
-    </button>
-    <button data-index="1" class="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm transition-all duration-300">
-      Design
-    </button>
-    <button data-index="2" class="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm transition-all duration-300">
-      Performance
-    </button>
-  </div>
-</div>
-
-
+        <div id="carousel-buttons" class="mt-4 flex flex-wrap gap-3 justify-center sm:justify-start">
+          <button data-index="0" class="px-3 py-1 rounded-full bg-koda-600 text-black font-semibold text-sm transition-all duration-300">Agentes IA</button>
+          <button data-index="1" class="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm transition-all duration-300">Design</button>
+          <button data-index="2" class="px-3 py-1 rounded-full bg-gray-800 text-gray-300 text-sm transition-all duration-300">Performance</button>
+        </div>
+      </div>
     </section>
 
     <section id="servicos" class="py-12">
@@ -142,14 +129,9 @@
 <section id="portfolio" class="py-12">
   <h3 class="text-2xl font-bold mb-6">Portfólio</h3>
   <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    
     <div class="rounded-xl overflow-hidden bg-gray-800 flex flex-col">
       <div class="bg-green-950/80 flex justify-center items-center">
-        <img class="h-auto"
-          src="./img/forest.png" 
-          alt="projeto"
-          class="w-full h-auto max-h-80 object-contain rounded-t-xl"
-        />
+        <img class="h-auto" src="./img/forest.png" alt="projeto" class="w-full h-auto max-h-80 object-contain rounded-t-xl" />
       </div>
       <div class="p-4">
         <h4 class="font-semibold">Empresa Camping</h4>
@@ -159,68 +141,41 @@
 
     <div class="rounded-xl overflow-hidden bg-gray-800 flex flex-col">
       <div class="bg-black/80 flex justify-center items-center">
-        <img class="h-auto"
-          src="./img/portfolio2.png" 
-          alt="projeto"
-          class="w-full h-auto max-h-80 object-contain rounded-t-xl"
-        />
+        <img class="h-auto" src="./img/portfolio2.png" alt="projeto" class="w-full h-auto max-h-80 object-contain rounded-t-xl" />
       </div>
       <div class="p-4">
         <h4 class="font-semibold">Startup Beta / Bicicletas em Carbono</h4>
         <p class="text-sm text-gray-400">Landing e automação de vendas</p>
       </div>
     </div>
-
   </div>
 </section>
 
 <section id="contato" class="py-12">
   <h3 class="text-2xl font-bold mb-6">Fale Conosco</h3>
 
-<form id="contact-form"
-      action="https://formsubmit.co/bd071483c02059d61842e6eb0e898d03"
-      method="POST"
-      class="grid gap-4 max-w-2xl">
+  <form id="contact-form" action="https://formsubmit.co/ajax/bd071483c02059d61842e6eb0e898d03" method="POST" class="grid gap-4 max-w-2xl">
+    <input type="text" name="nome" placeholder="Seu nome" required class="input">
+    <input type="email" name="email" placeholder="Seu e-mail" required class="input">
+    <textarea name="mensagem" placeholder="Mensagem" rows="4" required class="input"></textarea>
 
-  <input class="input" name="nome" placeholder="Nome" required />
-  <input class="input" name="email" placeholder="Email" type="email" required />
-  <textarea class="input" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+    <input type="hidden" name="_subject" value="Novo contato via site Kodatec.co">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://kodatec.vercel.app/#obrigado">
 
-  <input type="hidden" name="_subject" value="Novo contato via site Kodatec.co">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_next" value="https://kodatec.vercel.app/#obrigado">
+    <button type="submit" class="btn">Enviar</button>
+  </form>
 
-  <div class="flex gap-4">
-    <button class="btn" type="submit">Enviar</button>
-    <a class="px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-800" href="mailto:contato@kodatec.co">
-      contato@kodatec.co
-    </a>
-  </div>
-</form>
-
-
-
-
-
-
-
-
-
-  <!-- Modal de agradecimento (único e corrigido) -->
-  <div id="thankyou-modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 backdrop-blur-md z-50 transition-opacity duration-500">
+  <!-- Modal -->
+  <div id="thankyou-modal" class="fixed inset-0 hidden items-center justify-center bg-black/60 backdrop-blur-md z-50">
     <div class="bg-gray-950/90 border border-gray-700 p-8 rounded-2xl text-center max-w-md mx-4 shadow-xl animate-fade-in">
       <div class="flex justify-center mb-4">
         <img src="./img/gmail-icon.svg" alt="Gmail ícone" class="w-10 h-10 opacity-90">
       </div>
       <h4 class="text-2xl font-extrabold text-orange-400 mb-3">Mensagem Enviada!</h4>
-      <p class="text-gray-300 mb-6 leading-relaxed">
-        Agradecemos seu contato.<br>
-        Nossa equipe irá analisar sua mensagem e responder o quanto antes possível.
-      </p>
-      <button id="close-modal" class="px-5 py-2 rounded-md bg-orange-500/90 hover:bg-orange-500 text-black font-semibold transition-colors">
-        Fechar
-      </button>
+      <p class="text-gray-300 mb-6 leading-relaxed">Agradecemos seu contato.<br>Nossa equipe irá responder o quanto antes possível.</p>
+      <button id="close-modal" class="px-5 py-2 rounded-md bg-orange-500/90 hover:bg-orange-500 text-black font-semibold transition-colors">Fechar</button>
     </div>
   </div>
 </section>
@@ -236,134 +191,39 @@
     </div>
   </footer>
 
-
 <script>
-  const form = document.getElementById("contact-form");
-  const modal = document.getElementById("thankyou-modal");
-  const closeModal = document.getElementById("close-modal");
+const form = document.getElementById("contact-form");
+const modal = document.getElementById("thankyou-modal");
+const closeModal = document.getElementById("close-modal");
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const data = new FormData(form);
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const data = new FormData(form);
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: data,
-        headers: { "Accept": "application/json" }
-      });
-
-      if (response.ok) {
-        modal.classList.remove("hidden");
-        modal.classList.add("flex", "opacity-100");
-        form.reset();
-        console.log("✅ Mensagem enviada com sucesso!");
-      } else {
-        console.error("❌ Erro no envio:", response.statusText);
-        alert("Não foi possível enviar. Tente novamente mais tarde.");
-      }
-    } catch (error) {
-      console.error("Erro no envio:", error);
-      alert("Ocorreu um erro. Verifique sua conexão e tente novamente.");
-    }
-  });
-
-  closeModal.addEventListener("click", () => {
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
-  });
-
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      modal.classList.add("hidden");
-      modal.classList.remove("flex");
-    }
-  });
-
-  // ==========================
-  // Carrossel de imagens
-  // ==========================
-  const images = [
-    "./img/ia.png",
-    "./img/note.png",
-    "./img/performance.png"
-  ];
-
-  const buttons = document.querySelectorAll("#carousel-buttons button");
-  const img = document.getElementById("carousel-img");
-
-  let current = 0;
-  let interval;
-
-  function showImage(index) {
-    img.classList.add("opacity-0");
-    setTimeout(() => {
-      img.src = images[index];
-      img.classList.remove("opacity-0");
-    }, 300);
-
-    buttons.forEach((btn, i) => {
-      if (i === index) {
-        btn.classList.replace("bg-gray-800", "bg-koda-600");
-        btn.classList.replace("text-gray-300", "text-black");
-        btn.classList.add("font-semibold");
-      } else {
-        btn.classList.replace("bg-koda-600", "bg-gray-800");
-        btn.classList.replace("text-black", "text-gray-300");
-        btn.classList.remove("font-semibold");
-      }
-    });
-  }
-
-  function nextImage() {
-    current = (current + 1) % images.length;
-    showImage(current);
-  }
-
-  function startCarousel() {
-    interval = setInterval(nextImage, 4000);
-  }
-
-  buttons.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
-      clearInterval(interval);
-      current = i;
-      showImage(current);
-      startCarousel();
-    });
-  });
-
-  showImage(current);
-  startCarousel();
-
-  // ==========================
-  // Menu mobile
-  // ==========================
-  (function(){
-    const toggle = document.getElementById('mobile-toggle');
-    const mobileNav = document.getElementById('mobile-nav');
-    const closeBtn = document.getElementById('mobile-close');
-    const mobileLinks = document.querySelectorAll('#mobile-nav .mobile-link');
-
-    function hideMobileNav() {
-      mobileNav?.classList.add('hidden');
-      toggle?.setAttribute('aria-expanded', 'false');
-    }
-
-    toggle?.addEventListener('click', () => {
-      if (!mobileNav) return;
-      mobileNav.classList.toggle('hidden');
-      const expanded = mobileNav.classList.contains('hidden') ? 'false' : 'true';
-      toggle?.setAttribute('aria-expanded', expanded);
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: data,
+      headers: { "Accept": "application/json" }
     });
 
-    closeBtn?.addEventListener('click', hideMobileNav);
-    mobileLinks.forEach(link => link.addEventListener('click', hideMobileNav));
-    mobileNav?.addEventListener('click', (e) => { if (e.target === mobileNav) hideMobileNav(); });
-    window.addEventListener('resize', () => { if (window.innerWidth >= 1024) hideMobileNav(); });
-  })();
+    if (response.ok) {
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+      form.reset();
+    } else {
+      alert("Erro ao enviar o formulário. Tente novamente.");
+    }
+  } catch (err) {
+    alert("Ocorreu um erro. Verifique sua conexão e tente novamente.");
+  }
+});
+
+closeModal.addEventListener("click", () => {
+  modal.classList.add("hidden");
+  modal.classList.remove("flex");
+});
 </script>
-
 
 </body>
 </html>
