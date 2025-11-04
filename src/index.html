@@ -162,7 +162,9 @@
     <input type="hidden" name="_subject" value="Novo contato via site Kodatec.co">
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://kodatec.vercel.app/#obrigado">
+    <input type="hidden" name="_next" value="https://kodatecco.vercel.app/#obrigado">
+    <input type="hidden" name="_to" value="kodatec.co@gmail.com">
+
 
     <button type="submit" class="btn">Enviar</button>
   </form>
@@ -204,8 +206,10 @@ form.addEventListener("submit", async (e) => {
   try {
     const response = await fetch(form.action, {
       method: "POST",
-      body: data,
-      headers: { "Accept": "application/json" }
+      headers: {
+        "Accept": "application/json"
+      },
+      body: data
     });
 
     if (response.ok) {
