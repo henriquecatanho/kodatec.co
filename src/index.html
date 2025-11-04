@@ -192,6 +192,7 @@
   </footer>
 
 <script>
+/* === FORMULÁRIO DE CONTATO === */
 const form = document.getElementById("contact-form");
 const modal = document.getElementById("thankyou-modal");
 const closeModal = document.getElementById("close-modal");
@@ -223,7 +224,79 @@ closeModal.addEventListener("click", () => {
   modal.classList.add("hidden");
   modal.classList.remove("flex");
 });
+
+/* === MENU MOBILE === */
+const mobileToggle = document.getElementById("mobile-toggle");
+const mobileNav = document.getElementById("mobile-nav");
+const mobileClose = document.getElementById("mobile-close");
+
+mobileToggle.addEventListener("click", () => {
+  mobileNav.classList.remove("hidden");
+  mobileNav.classList.add("flex");
+});
+
+mobileClose.addEventListener("click", () => {
+  mobileNav.classList.add("hidden");
+  mobileNav.classList.remove("flex");
+});
+
+/* === CARROSSEL DE IMAGENS (com autoplay + fade) === */
+const carouselImg = document.getElementById("carousel-img");
+const carouselButtons = document.querySelectorAll("#carousel-buttons button");
+
+const imagens = [
+  "./img/ia.png",         // 0 - Agentes IA
+  "./img/note.png",       // 1 - Design
+  "./img/performance.png" // 2 - Performance
+];
+
+let indexAtual = 0;
+let intervalo;
+
+// Função que troca imagem e botão ativo
+function trocarImagem(index) {
+  carouselImg.style.transition = "opacity 0.6s ease-in-out";
+  carouselImg.style.opacity = 0;
+
+  setTimeout(() => {
+    carouselImg.src = imagens[index];
+    carouselImg.style.opacity = 1;
+  }, 400);
+
+  carouselButtons.forEach((b, i) => {
+    if (i === index) {
+      b.classList.add("bg-koda-600", "text-black");
+      b.classList.remove("bg-gray-800", "text-gray-300");
+    } else {
+      b.classList.remove("bg-koda-600", "text-black");
+      b.classList.add("bg-gray-800", "text-gray-300");
+    }
+  });
+}
+
+// Botões manuais
+carouselButtons.forEach((btn, i) => {
+  btn.addEventListener("click", () => {
+    clearInterval(intervalo);
+    indexAtual = i;
+    trocarImagem(indexAtual);
+    iniciarAutoPlay(); // reinicia autoplay após clique
+  });
+});
+
+// Auto play a cada 3 segundos
+function iniciarAutoPlay() {
+  intervalo = setInterval(() => {
+    indexAtual = (indexAtual + 1) % imagens.length;
+    trocarImagem(indexAtual);
+  }, 3000);
+}
+
+// Inicia o carrossel
+trocarImagem(indexAtual);
+iniciarAutoPlay();
 </script>
+
 
 </body>
 </html>
