@@ -177,24 +177,21 @@
 <section id="contato" class="py-12">
   <h3 class="text-2xl font-bold mb-6">Fale Conosco</h3>
 
-<form id="contact-form" action="https://formsubmit.co/kodatec.co@gmail.com" method="POST" class="grid gap-4 max-w-2xl">
-  <input class="input" name="nome" placeholder="Nome" required />
-  <input class="input" name="email" placeholder="Email" type="email" required />
-  <textarea class="input" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+<form action="https://formsubmit.co/bd071483c02059d61842e6eb0e898d03" method="POST">
+  <input type="text" name="name" placeholder="Seu nome" required>
+  <input type="email" name="email" placeholder="Seu e-mail" required>
+  <textarea name="message" placeholder="Sua mensagem" required></textarea>
 
-  <!-- Configurações do FormSubmit -->
-  <input type="hidden" name="_subject" value="Novo contato via site Kodatec.co">
+  <input type="hidden" name="_subject" value="Novo contato pelo site Kodatec!">
+  <input type="hidden" name="_template" value="box">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://kodatec.vercel.app/#sucesso">
 
-  <!-- A chave secreta (token) que o FormSubmit te deu -->
-  <input type="hidden" name="_token" value="bd071483c02059d61842e6eb0e898d03">
-
-  <div class="flex gap-4">
-    <button class="btn" type="submit">Enviar</button>
-    <a class="px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-800" href="mailto:contato@kodatec.co">contato@kodatec.co</a>
-  </div>
+  <button type="submit">Enviar</button>
 </form>
+
+
+
 
 
 
