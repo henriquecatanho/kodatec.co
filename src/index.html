@@ -290,6 +290,34 @@ function iniciarAutoPlay() {
 
 trocarImagem(indexAtual);
 iniciarAutoPlay();
+
+const mobileLinks = document.querySelectorAll('#mobile-nav a[href^="#"]');
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // fecha o menu
+    mobileNav.classList.add('hidden');
+    mobileNav.classList.remove('flex');
+
+    // obtém o id do alvo (ex: "#servicos")
+    const targetSelector = link.getAttribute('href');
+    const targetEl = document.querySelector(targetSelector);
+
+    // aguarda um breve momento para o menu desaparecer visualmente, depois rola
+    setTimeout(() => {
+      if (targetEl) {
+        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // opcional: atualiza o hash da URL sem pular a rolagem
+        history.replaceState(null, '', targetSelector);
+      } else {
+        // fallback: muda o hash (caso o elemento não exista)
+        location.hash = targetSelector;
+      }
+    }, 100); // 100ms funciona bem; ajuste se tiver animações maiores
+  });
+});
 </script>
 
 
