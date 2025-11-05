@@ -143,4 +143,82 @@
   .container{ max-width:1100px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem; }
   @media (min-width: 768px){ .container{ padding-left:1.5rem; padding-right:1.5rem; } }
 }
+
+@layer utilities {
+  /* === ANIMAÇÕES DE ENTRADA === */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* === CLASSES DE UTILIZAÇÃO === */
+  .animate-fade-in-up { animation: fadeInUp 0.8s ease-out both; }
+  .animate-fade-in-down { animation: fadeInDown 0.8s ease-out both; }
+  .animate-fade-in { animation: fadeIn 1s ease-out both; }
+  .animate-zoom-in { animation: zoomIn 0.8s ease-out both; }
+  .animate-slide-in-left { animation: slideInLeft 0.8s ease-out both; }
+  .animate-slide-in-right { animation: slideInRight 0.8s ease-out both; }
+
+  /* Delay helpers (para combinar com JS scroll) */
+  .delay-100 { animation-delay: .1s; }
+  .delay-200 { animation-delay: .2s; }
+  .delay-400 { animation-delay: .4s; }
+  .delay-600 { animation-delay: .6s; }
+  .delay-800 { animation-delay: .8s; }
+}
 /* ...existing code... */
